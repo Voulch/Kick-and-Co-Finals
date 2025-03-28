@@ -1,0 +1,297 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Body Styles */
+body, html {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header Styles */
+header {
+  background: linear-gradient(90deg, rgba(80, 147, 201, 0.86) 18%, rgba(60, 157, 141, 0.86) 82%);
+  padding: 10px 0;
+  text-align: center;
+  color: white;
+}
+
+/* Logo Styles */
+.logo img {
+  width: 90px;
+  height: auto;
+  margin: 60px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+
+/* Nav  Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+
+.nav-links li {
+  display: inline;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 20px;
+  background: linear-gradient(90deg, #005C99 0%, #001F33 100%);
+}
+
+.nav-links a::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0;
+  height: 2px;
+  background-color: #170a91;
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover::before {
+  width: 100%;
+}
+
+.nav-links a:hover {
+  color: #170a91;
+  padding-bottom: 5px;
+}
+
+/* Banner Styles */
+.banner-container {
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+  
+/* Hide the images by default */
+.mySlides {
+  display: none;
+  padding: 0;
+  margin: 0;
+}
+
+.mySlides img {
+  width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 0;
+}
+  
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+  
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+  
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+  
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* Footer Styles */
+.footer-background {
+  background: linear-gradient(90deg, rgba(80, 147, 201, 0.86) 18%, rgba(60, 157, 141, 0.86) 82%);
+  display: flex;
+  margin-top: 100px;
+  width: 100%;
+  flex-direction: column;
+  padding: 5px 43px;
+}
+
+.footer-titles {
+  display: flex;
+  width: 485px;
+  max-width: 100%;
+  color: #fff;
+  text-align: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font: 400 18px/1 Fjalla One, sans-serif;
+}
+
+.footer-content {
+  display: flex;
+  width: 100%;
+  gap: 0 100px;
+  flex-wrap: wrap;
+}
+
+.footer-wrap {
+  display: flex;
+  width: 100%;
+  gap: 40px 40px;
+  flex-wrap: wrap;
+}
+
+.social-icons {
+  display: flex;
+  margin: 0 -10px;
+  gap: 30px;
+}
+
+.icon {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  width: 48px;
+}
+
+.payment-icons {
+  display: flex;
+  gap: 40px;
+}
+
+.end-text {
+  color: #fff;
+  text-align: right;
+  flex-grow: 0.8;
+  width: 554px;
+  margin: 0;
+  font: 400 28px/1 Fjalla One, sans-serif;
+}
+
+@media (max-width: 991px) {
+    .end-text {
+      max-width: 100%;
+    }
+}
+
+/* Responsive Styles for Phones */
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .logo img {
+    margin: 20px 0;
+    width: 80px;
+  }
+
+  .banner-container {
+    padding: 0;
+  }
+
+  .mySlides img {
+    width: 100%;
+    height: auto;
+  }
+
+  .footer-background {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 10px;
+    gap: 10px;
+  }
+
+  .footer-titles {
+    width: auto;
+    flex-direction: column;
+    align-items: center;
+    font-size: 16px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .social-icons {
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .payment-icons {
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .end-text {
+    text-align: center;
+    width: auto;
+    margin: 10px 0;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-links a {
+    padding: 6px 10px;
+  }
+
+  .prev, .next {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .footer-titles {
+    font-size: 14px;
+  }
+
+  .end-text {
+    font-size: 18px;
+  }
+
+  .icon {
+    width: 36px;
+  }
+
+  .payment-icons {
+    flex-direction: row;
+  }
+}

@@ -1,0 +1,58 @@
+/* Divider Styles */
+.divider {
+    width: 100%;
+    height: 65px;
+    border: none;
+    background: linear-gradient(90deg, #005C99 0%, #001F33 100%);
+    margin: 0;
+    padding: 0;
+}
+
+/* Featured Shoes Styles */
+.featured-shoes {
+    text-align: center;
+    padding: 30px 0 30px 0;
+}
+  
+.featured-shoes h1 {
+    font-family: 'Faster One', cursive;
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+  
+.featured-shoes div {
+    display: inline-block;
+    background-color: #235257;
+    padding: 10px 10px 0 10px;
+    width: 235px;
+    margin: 50px 50px 70px 50px;
+    text-align: center;
+}
+  
+.featured-shoes img {
+    width: 100%;
+    height: auto;
+}
+  
+.featured-shoes p {
+    color: #fff;
+}
+  
+/* Brands Styles */
+.brands {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(90deg, #005C99 22.5%, #0099FF 78%);
+}
+  
+.brands h1 {
+    font-family: 'Faster One', cursive;
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+  
+.brands img {
+    width: 153px;
+    height: 150px;
+    margin: 50px;
+}

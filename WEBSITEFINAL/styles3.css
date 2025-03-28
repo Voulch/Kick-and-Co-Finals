@@ -1,0 +1,22 @@
+/* Heading Styles */
+.title-text {
+    font-family: 'Faster One', cursive;
+    font-size: 32px;
+    margin: 35px 0 45px 0;
+    text-align: center;
+}
+
+/* Map Styles */
+.map-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    border: 1px solid #ddd;
+    height: 100vh;
+}
+
+.map-section iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}

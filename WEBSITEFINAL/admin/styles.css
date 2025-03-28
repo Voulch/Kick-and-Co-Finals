@@ -1,0 +1,396 @@
+/* General Styles */
+body {
+    background: linear-gradient(135deg, #1e1e1e, #2a2a2a);
+    color: #e0e0e0;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+/* Admin Container */
+.admin-container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    width: 100%;
+    background: #2a2a2a;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+header h1 {
+    font-size: 3rem;
+    color: #4dafff;
+    font-family: 'Raleway', sans-serif;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.admin-header {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    color: #4dafff;
+}
+
+/* Action Buttons */
+.action-buttons {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Buttons */
+button, a.button {
+    display: inline-block;
+    background: linear-gradient(135deg, #4dafff, #86bdfc);
+    color: #121212;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: background 0.3s ease-in-out, transform 0.2s;
+    margin: 10px 5px;
+}
+
+button:hover, a.button:hover {
+    background: linear-gradient(135deg, #67a2ea, #005eea);
+    transform: scale(1.05);
+}
+
+/* Login Panel */
+.login-container {
+    background: #2a2a2a;
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.6);
+    margin: auto;
+}
+
+.login-container h2 {
+    margin-bottom: 20px;
+    font-size: 2.4rem;
+    color: #4dafff;
+}
+
+.login-container .form-group {
+    width: 100%;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.login-container .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #e0e0e0;
+}
+
+.login-container .form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+.login-container button {
+    width: 100%;
+    background: linear-gradient(135deg, #4dafff, #86bdfc);
+    color: #121212;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: background 0.3s ease-in-out, transform 0.2s;
+}
+
+.login-container button:hover {
+    background: linear-gradient(135deg, #67a2ea, #005eea);
+    transform: scale(1.05);
+}
+
+/* Admin Panel */
+.admin-panel {
+    width: 90%;
+    max-width: 1080px;
+    background: #2a2a2a;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.6);
+    margin: 20px auto;
+    text-align: center;
+    overflow-x: auto;
+    box-sizing: border-box;
+}
+
+.admin-panel h2 {
+    font-size: 2.4rem;
+    color: #4dafff;
+    margin-bottom: 20px;
+}
+
+.admin-panel table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background: #1e1e1e;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.6);
+    table-layout: fixed;
+}
+
+.admin-panel th, .admin-panel td {
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #444;
+    color: #e0e0e0;
+    font-size: 1rem;
+    word-wrap: break-word;
+}
+
+.admin-panel th {
+    background: linear-gradient(135deg, #4dafff, #86bdfc);
+    color: #121212;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.admin-panel td img {
+    max-width: 50px;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Table */
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    background: #1e1e1e;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.6);
+    margin: 0 auto;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #444;
+    color: #e0e0e0;
+    font-size: 1rem;
+}
+
+th {
+    background: linear-gradient(135deg, #4dafff, #86bdfc);
+    color: #121212;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+td img {
+    max-width: 50px;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.full-width-table {
+    width: 90%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    background: #1e1e1e;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.6);
+    table-layout: fixed;
+}
+
+.full-width-table th, .full-width-table td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #444;
+    color: #e0e0e0;
+    font-size: 1rem;
+    word-wrap: break-word;
+}
+
+.full-width-table th {
+    background: linear-gradient(135deg, #4dafff, #86bdfc);
+    color: #121212;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.full-width-table td img {
+    max-width: 50px;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Form Container */
+.form-container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #2a2a2a;
+    border-radius: 10px;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.form-container h2 {
+    text-align: center;
+    color: #4dafff;
+    margin-bottom: 20px;
+}
+
+.form-container label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #e0e0e0;
+    width: 100%;
+    text-align: left;
+}
+
+.form-container input, .form-container select, .form-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+    box-sizing: border-box;
+}
+
+.form-container textarea {
+    resize: none;
+    height: 100px;
+}
+
+.form-container button {
+    width: 100%;
+    padding: 10px;
+    background: linear-gradient(135deg, #4dafff, #86bdfc);
+    color: #121212;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, transform 0.2s;
+}
+
+.form-container button:hover {
+    background: linear-gradient(135deg, #67a2ea, #005eea);
+    transform: scale(1.05);
+}
+
+.form-container .exit-button {
+    background: linear-gradient(135deg, #ff4d4d, #ff1a1a);
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    transition: background 0.3s ease-in-out, transform 0.2s;
+    width: 91%;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.form-container .exit-button:hover {
+    background: linear-gradient(135deg, #ff6666, #ff3333);
+    transform: scale(1.05);
+}
+
+.form-container img {
+    display: block;
+    margin: 10px auto;
+    max-width: 100px;
+    border-radius: 5px;
+}
+
+/* Product List Header */
+.product-list-header {
+    margin: 20px auto;
+    text-align: center;
+    font-size: 1.8rem;
+    color: #4dafff;
+    background: linear-gradient(135deg, #1e1e1e, #2a2a2a);
+    padding: 10px;
+    border-radius: 8px;
+    width: 90%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    background: #1e1e1e;
+    color: #e0e0e0;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 0.9rem;
+    border-top: 1px solid #444;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .admin-panel table {
+        font-size: 0.9rem;
+    }
+
+    .admin-panel th, .admin-panel td {
+        padding: 10px;
+    }
+
+    table {
+        font-size: 0.9rem;
+    }
+
+    th, td {
+        padding: 10px;
+    }
+
+    .full-width-table th, .full-width-table td {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+
+    .admin-panel {
+        width: 95%;
+    }
+
+    .form-container {
+        width: 90%;
+    }
+}
